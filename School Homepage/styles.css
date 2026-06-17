@@ -1,0 +1,42 @@
+@media(max-width:768px){
+    nav{
+        flex-direction: column;
+    }
+}
+body{
+    background-color: gray;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    flex-wrap: wrap;
+
+}
+nav img{
+    width: 70px;
+}
+.menu{
+    display: flex;
+    gap: 20px;
+}
+.herosection{
+    padding: 5px;
+    margin: 10px;
+}
+.formitems{
+    border: 1px solid black;
+    margin: 10px;
+}
+.formitems input{
+    margin: 5px;
+}
+.formitems button{
+    padding: 5px;
+}
+footer{
+    border-top: 1px solid black;
+    margin: 10px;
+}

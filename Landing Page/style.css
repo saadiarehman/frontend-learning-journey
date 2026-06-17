@@ -1,0 +1,141 @@
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+nav{
+     background-color: rgb(48, 48, 218);
+    color: white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:15px;
+    border:1px solid rgb(19, 0, 0);
+    border-radius: 5px;
+}
+.logo{
+    font-size:25px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.menu{
+    display: flex;
+    gap:50px;
+}
+nav a{
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+nav button{
+    padding: 10px;
+    color: blue;
+    border-radius: 10px;
+}
+.herosectioncard{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+    border:1px solid rgb(24,23,23);
+    border-radius:5px;
+    background-color: rgb(56,56,221);
+    color:white;
+}
+.herosection{
+    
+    margin-top: 15px;
+}
+.herosection h1{
+    font-size: 50px;
+}
+.herosection section{
+    font-size: 20px;
+}
+.herosection button{
+    margin-top: 10px;
+    padding: 10px;
+    border:0px solid;
+    border-radius: 5px;
+    color: white;
+    font-size:medium;
+    font-weight: bold;
+    background-color: rgb(57, 57, 175);
+}
+.herosectioncard img{
+    width: 450px;
+    height: auto;
+}
+.features h1{
+    text-align: center;
+}
+.featurescards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.featurescard{
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+.featurescard img{
+    width: 80px;
+    height: 80px;
+}
+.featurescard section{
+    font-size: large;
+    text-align: center;
+}
+footer{
+    margin-top: 10px;
+    background-color: rgb(48, 48, 218);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;   
+}
+
+
+
+
+
+
+@media(max-width:786px){
+    nav{
+        flex-direction: column;
+        gap:15px
+    }
+    .menu{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .herosectioncard{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .herosectioncard h1{
+        font-size: 35px;
+    }
+    .herosection section{
+        font-size: 15px;
+    }
+    .herosectioncard img{
+        width: 100%;
+        max-width: 350px;
+    }
+    .featurescards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .featurescard{
+        width: 90%;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,201 @@
+body{
+
+}
+nav{
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+}
+.navlogo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  
+}
+.navlogo img{
+    width: 80%;
+    max-width: 170px;
+    height: auto;
+}
+.clinicname{
+    
+}
+.clinicname h1{
+    color: blue;
+   
+}
+.secondlinelogo{
+    color: black;
+    font-size: large;
+}
+.navmenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.navmenu a{
+    padding: 25px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav button{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+.herosection{
+    background-image:url("./images/herosection\ background\ img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.herosectiontext{
+    margin-left: 350px;
+    margin-top: 20px;
+}
+.priority{
+    color: black;
+}
+.herosection h1{
+    color: blue;
+}
+.herosection section{
+    font-size: larger;
+}
+.herosection button{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 20px;
+    
+}
+.doctors{
+    text-align: center;
+}
+.doctors h4{
+     color: blue;
+}
+.doctorcards{
+   display: flex;
+   flex-direction: row;
+   justify-content:space-around;
+   margin-left: 250px;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.doctorcard{
+     border: 1px solid rgb(221, 211, 211);
+     border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+     flex-wrap: wrap;
+     text-align: left;
+     width: 25%;
+}
+.doctorcard img{
+    width: 80%;
+   max-width: 200px;
+   height: auto;
+   border-radius: 5px;
+}
+.doctordetail{
+    
+}
+.doctordetail section{
+   
+    color: rgb(180, 179, 179);
+  
+}
+.socialmediaicon{
+   display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 120px;
+}
+.socialmediaicon img{
+    width: 80%;
+    max-width: 30px;
+    height: auto;
+}
+.bookingform{
+    background-color: rgb(214, 239, 248);
+    text-align: center;
+    width: 80%;
+     margin-left: 313px;
+     border-radius: 5px;
+     
+}
+.bookingform h4{
+     color: blue;
+     margin-top: 10px;
+}
+.bookingformitems{
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.formitemscard{
+    text-align: left;
+}
+formitemscard label{
+    
+}
+.formitemscard input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
+.bookingform button{
+     background-color: blue;
+    color: white;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+footer{
+    background-color: blue;
+    color: white;
+     border-radius: 5px;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.footerlogoimg{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footerlogo{
+    width: 100%;
+    max-width: 80px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+footer p{
+    text-align: center;
+}
