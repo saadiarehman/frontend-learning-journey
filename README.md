@@ -7,7 +7,7 @@ This repository contains projects completed while learning:
 - Flexbox
 - CSS Grid
 - Responsive Design
-- JavaScript Basics
+
 
 ## Projects
 
@@ -19,7 +19,7 @@ This repository contains projects completed while learning:
 6. Dashboard Grid
 7. Responsive Landing Page
 8. Clinic Website UI
-9. JavaScript Exercises
+
 
 ## Author
 
