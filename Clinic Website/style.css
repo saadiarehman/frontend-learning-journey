@@ -7,11 +7,13 @@ nav{
     justify-content: space-around;
     align-items: center;
     border-radius: 5px;
+    flex-wrap: wrap;
 }
 .navlogo{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    flex-wrap: wrap;
   
 }
 .navlogo img{
@@ -32,6 +34,7 @@ nav{
 }
 .navmenu{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
@@ -57,6 +60,7 @@ nav button{
     background-position: center;   
     height: 300px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 .herosectiontext{
@@ -66,7 +70,7 @@ nav button{
 .priority{
     color: black;
 }
-.herosection h1{
+.herosectionpriority{
     color: blue;
 }
 .herosection section{
@@ -148,6 +152,7 @@ nav button{
 .bookingformitems{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     
 
 }
@@ -182,10 +187,11 @@ footer{
 .footer{
     display: flex;
     justify-content: space-around;
-   
+    flex-wrap: wrap;
 }
 .footerlogoimg{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -198,4 +204,58 @@ footer{
 }
 footer p{
     text-align: center;
+}
+
+
+@media(max-width:768px){
+    .herosectiontext{
+    margin-left: 100px;
+    margin-top: 20px;
+    }
+nav{
+    flex-direction: column;
+   
+}
+.navlogo{
+    margin-bottom: 0px;
+    
+}
+
+    .navmenu{
+    flex-direction: column;
+    gap: 5px;
+    
+}
+.navmenu a{
+    padding: 5px;
+    
+}
+nav button{
+    padding: 5px;
+    margin-top: 5px;
+}
+.herosection{
+    margin-top: 5px;
+}
+.doctorcards{
+    flex-direction: column;
+    margin-left: 120px;
+    gap:10px
+}
+.doctorcard{
+    width: 80%;
+}
+.bookingform{
+     margin-left: 100px;
+     
+}
+
+.bookingformitems{
+    flex-direction: column;
+    align-items: center;
+}
+.footer{
+    flex-direction: column;
+}
+
 }
