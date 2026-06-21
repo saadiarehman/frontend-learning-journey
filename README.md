@@ -23,4 +23,4 @@ This repository contains projects completed while learning:
 
 ## Author
 
-Saadia
+Saadia Rehman
