@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practise</title>
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <h1 id="firstheading">Practicing DOM</h1>
+    <button id="btn">Change Text</button> <br>
+    <button id="colorbtn">Change color of Text</button><br>
+    <button id="backgroundColorChnagebtn">Change Background color</button>
+    <p id="msgClick"></p>
+    <button id="showMsgbtn">Click To Show Msg</button>
+    <script>
+        //Task 1: Select an Element
+        let firstHeading=document.getElementById("firstheading");
+       let btn=document.getElementById("btn");
+       let colorbtn=document.getElementById("colorbtn");
+       let backgroundColorChnagebtn=document.getElementById("backgroundColorChnagebtn");
+       let msgClick=document.getElementById("msgClick");
+       let showMsgbtn=document.getElementById("showMsgbtn");
+       //Task 2: Change Text
+       btn.addEventListener("click",function(){
+        firstHeading.textContent="Welcome to DOM Practisng"
+       });
+       //Task 3: Change Color
+       colorbtn.addEventListener("click",function(){
+        firstHeading.style.color="blue";
+       });
+       //Task 4: Change Background Color
+       backgroundColorChnagebtn.addEventListener("click",function(){
+        document.body.style.backgroundColor="green"
+       });
+       // Task 5: Show a Message
+       showMsgbtn.addEventListener("click",function(){
+        msgClick.textContent="Button Was Clicked"
+       });
+    </script>
+</body>
+</html>
