@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods Using Javascript</title>
+</head>
+<body>
+    <h1>Array Methods in Javascript</h1>
+    <script>
+let colors = ["red", "green"];
+//Add "blue" using an array method.
+colors.push("blue");
+
+for(let i=0;i<=colors.length;i++){
+    console.log(colors[i]);
+
+}
+//Remove the last item from:
+let x=colors.length-1;
+colors.pop(colors[x]);
+console.log(colors)
+// Add "HTML" at the beginning:
+let skills = ["CSS", "JavaScript"];
+    skills.unshift("HTML")
+    console.log(skills);
+//Check whether "apple" exists:
+let fruits = ["banana", "apple", "orange"];
+console.log(fruits.includes("apple"))
+
+//Remove the first city.
+let cities = ["Riyadh", "Jeddah", "Dammam"];
+cities.shift();
+console.log(cities)
+</script>
+</body>
+</html>
