@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise Javascript Events</title>
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <button id="clickBtn">Click Me</button>
+    <p id="changeText">welcome</p>
+    <button id="changeTextBtn">Click to change text</button><br>
+    <p id="showHideText">This is my text</p>
+    <button id="showBtn">Click to show</button>
+    <button id="hideBtn">Click to hide</button>
+    <p id="showCounter">0</p>
+    <button id="addCounterBtn">Click to Increase number</button>
+    <button id="minusCounterBtn">Click to decrease number</button><br>
+    <button id="bgColorBtn">click to change background color</button> <br> <br> <br>
+    <input id="nameInput" placeholder="Enter name">
+    <p id="displayname"></p>
+    <script>
+        //Click Event
+        let clickBtn=document.getElementById("clickBtn");
+        let changeText=document.getElementById("changeText");
+        let changeTextBtn=document.getElementById("changeTextBtn");
+        let showHideText=document.getElementById("showHideText");
+        let showBtn=document.getElementById("showBtn");
+        let hideBtn=document.getElementById("hideBtn");
+        let showCounter=document.getElementById("showCounter");
+        let addCounterBtn=document.getElementById("addCounterBtn");
+        let minusCounterBtn=document.getElementById("minusCounterBtn")
+        let bgColorBtn=document.getElementById("bgColorBtn");
+        let nameInput=document.getElementById("nameInput");
+        let displayname=document.getElementById("displayname");
+
+        clickBtn.addEventListener("click",function(){
+            console.log("button clicked")
+        })
+        //Task 1: Change Text on Click
+        changeTextBtn.addEventListener("click",function(){
+            changeText.textContent="change Text on button click";
+        })
+     //   Task 2: Show / Hide Text
+        showBtn.addEventListener("click",function(){
+            showHideText.style.display="block";
+        })
+         hideBtn.addEventListener("click",function(){
+            showHideText.style.display="none";
+        })
+        // Task 3: Counter Button
+        let count=0;
+        addCounterBtn.addEventListener("click",function(){
+            count++;
+            showCounter.textContent=count;
+        })
+        minusCounterBtn.addEventListener("click",function(){
+             count--;
+             showCounter.textContent=count;
+        })
+        //Task 4: Change Background Color
+        bgColorBtn.addEventListener("click",function(){
+          document.body.style.backgroundColor="blue"
+        })
+        //Task 5: Input Event
+        nameInput.addEventListener("input",function(){
+            displayname.textContent="Hello "+nameInput.value;
+        })
+    </script>
+</body>
+</html>
