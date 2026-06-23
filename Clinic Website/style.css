@@ -14,16 +14,13 @@ nav{
     align-items: center;
     margin-bottom: 20px;
     flex-wrap: wrap;
-  
 }
 .navlogo img{
-    width: 80%;
-    max-width: 170px;
+    width: 70%;
+    max-width: 130px;
     height: auto;
 }
-.clinicname{
-    
-}
+
 .clinicname h1{
     color: blue;
    
@@ -31,6 +28,9 @@ nav{
 .secondlinelogo{
     color: black;
     font-size: large;
+}
+.menu-icon{
+    display:none;
 }
 .navmenu{
     display: flex;
@@ -62,13 +62,11 @@ nav button{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
 }
 .herosectiontext{
-    margin-left: 350px;
-    margin-top: 20px;
-}
-.priority{
-    color: black;
+    width: 40%;
+    padding-left: 80px;
 }
 .herosectionpriority{
     color: blue;
@@ -97,10 +95,10 @@ nav button{
 .doctorcards{
    display: flex;
    flex-direction: row;
-   justify-content:space-around;
-   margin-left: 250px;
+   justify-content:center;
+   gap: 20px;
     flex-wrap: wrap;
-    width: 80%;
+    flex:1 1 300px;
 }
 .doctorcard{
      border: 1px solid rgb(221, 211, 211);
@@ -141,7 +139,7 @@ nav button{
     background-color: rgb(214, 239, 248);
     text-align: center;
     width: 80%;
-     margin-left: 313px;
+     margin:20px auto;
      border-radius: 5px;
      
 }
@@ -209,7 +207,7 @@ footer p{
 
 @media(max-width:768px){
     .herosectiontext{
-    margin-left: 100px;
+    margin-left: 0px;
     margin-top: 20px;
     }
 nav{
@@ -220,22 +218,22 @@ nav{
     margin-bottom: 0px;
     
 }
-
-    .navmenu{
-    flex-direction: column;
-    gap: 5px;
-    
+.navlogo img{
+    max-width: 130px;
 }
-.navmenu a{
-    padding: 5px;
+.navmenu{
+    
+   display: none;
     
 }
 nav button{
-    padding: 5px;
-    margin-top: 5px;
+      display: none;
+
 }
 .herosection{
     margin-top: 5px;
+    font-size: small;
+    text-align: left;
 }
 .doctorcards{
     flex-direction: column;
@@ -256,6 +254,15 @@ nav button{
 }
 .footer{
     flex-direction: column;
+    display: none;
 }
-
+footer p{
+    text-align: center;
+    display: block;
+    padding: 15px;
+}
+.menu-icon{
+        display:block;
+        font-size:30px;
+    }
 }
